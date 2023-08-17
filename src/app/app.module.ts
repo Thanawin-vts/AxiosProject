@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { MyLibModule } from 'my-lib';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

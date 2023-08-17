@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyLibService } from 'my-lib';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AxiosProject';
+  title = 'SelfProject';
+  
+  constructor(myLibService: MyLibService) {
+    myLibService.tomato()
+  }
 }
