@@ -1,0 +1,21 @@
+<table class="table-data">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header.name }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.name }}</td>
+      <td>{{ item.category }}</td>
+      <td>{{ item.price }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="table-data">
+  <div>
+    <div *ngFor="let header of headers">{{ header.name }}</div>
+    <div *ngFor="let item of items">{{ item.name }}</div>
+  </div>
+</div>
