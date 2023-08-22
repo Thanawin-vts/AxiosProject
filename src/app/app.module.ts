@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TableComponent } from './table/table.component';
+import { WnmoduleModule } from 'Wnmodule';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TableComponent } from './table/table.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WnmoduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

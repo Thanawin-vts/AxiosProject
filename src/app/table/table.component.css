@@ -9,12 +9,14 @@
   border: 5px solid red;
   background-color: lightgreen;
 } */
-
+/* div {
+    color: blue
+} */
 .table-data {
   border-radius: 1rem;
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .table-data th,
