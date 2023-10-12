@@ -1,3 +1,29 @@
+.container {
+    margin: 20px;
+    border: 2px gray solid;
+    border-radius: 5px;
+    height: 100vh;
+}
+
 .content {
     margin: 20px;
+}
+
+.header {
+    /* display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
+    display: flex;
+}
+
+.btn-link {
+    margin: 5px;
+    padding: 5px;
+    border: 2px gray solid;
+    border-radius: 5px;
+    width: 100px;
+}
+
+a.active-link {
+    background-color: gray;
+    color: white;
 }

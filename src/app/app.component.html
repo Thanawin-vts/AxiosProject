@@ -1,8 +1,14 @@
-<div class="content">
-  <div class="content">
-    <app-auto-complete></app-auto-complete>
+<div class="content header">
+  <div *ngFor="let list of routeLists">
+    <!-- <button class="btn"> -->
+      <a [routerLink]="list.route" routerLinkActive="active-link" class="btn-link">
+        {{ list.name }}
+      </a>
+    <!-- </button> -->
   </div>
+</div>
+<div class="container">
   <div class="content">
-    <app-badge></app-badge>
+    <router-outlet></router-outlet>
   </div>
 </div>

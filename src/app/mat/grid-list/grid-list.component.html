@@ -1,0 +1,13 @@
+<h2>Grid List</h2>
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color"
+  >
+<mat-grid-tile-header>header</mat-grid-tile-header>
+{{ tile.text }}
+<mat-grid-tile-footer>footer</mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
