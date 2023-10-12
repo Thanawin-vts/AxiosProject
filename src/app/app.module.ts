@@ -50,8 +50,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MAT_TOOLTIP_DEFAULT_OPTIONS, MatTooltipDefaultOptions } from '@angular/material/tooltip';
 
 const myCustomTooltipOptions: MatTooltipDefaultOptions = {
-  showDelay: 1000, // Delay in milliseconds before the tooltip appears
-  hideDelay: 200,  // Delay in milliseconds before the tooltip disappears after mouseout
+  showDelay: 0, // Delay in milliseconds before the tooltip appears
+  hideDelay: 0,  // Delay in milliseconds before the tooltip disappears after mouseout
   touchendHideDelay: 2000, // Delay in milliseconds before the tooltip disappears after touchend event
   position: 'above', // Default tooltip position
 };
