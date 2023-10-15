@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WnmoduleService } from 'Wnmodule';
+import { DateFormatterService } from 'date-formatter';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,9 @@ import { WnmoduleService } from 'Wnmodule';
 })
 export class AppComponent {
   title = 'SelfProject';
-  constructor(wnService: WnmoduleService) {
-    wnService.logTest()
+  format: string = ''
+  date = new Date(Date.now())
+  constructor(dateFormatterService: DateFormatterService) {
+    // dateFormatterService.test()
   }
 }
