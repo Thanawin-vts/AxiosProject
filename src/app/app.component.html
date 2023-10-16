@@ -1,9 +1,10 @@
 <h2>Date Now : {{ date }}</h2>
 <hr />
-Input Date Format : <input [(ngModel)]="format">
+ Input Date Format : <input [(ngModel)]="format">
 <h3>Test Input : {{ format }}</h3>
 <p>Result : {{ date | dateformat : "TH" : format }}</p>
 <hr />
+<!--
 <h3>Date Format : dd-MM-yyyy</h3>
 <p>Result : {{ date | dateformat : "TH" : "dd-MM-yyyy" }}</p>
 <hr />
@@ -12,4 +13,4 @@ Input Date Format : <input [(ngModel)]="format">
 <hr />
 <h3>Date Format : Invalid Format</h3>
 <p>Result : {{ date | dateformat : "TH" : "dd-MM-yyyyy" }}</p>
-<hr />
+<hr /> -->

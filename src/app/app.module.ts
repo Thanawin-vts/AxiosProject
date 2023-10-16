@@ -14,9 +14,9 @@ import { DateFormatterModule } from 'wn-formatter/projects/date-formatter/src/li
   ],
   imports: [
     BrowserModule,
+    DateFormatterModule,
     AppRoutingModule,
     FormsModule,
-    DateFormatterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
