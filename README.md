@@ -1,2 +1,2 @@
-#This is Axios learning project
+#This is Self learning project
 ##Self-learning
