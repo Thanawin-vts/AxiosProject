@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TableComponent } from './table/table.component';
-import { DateFormatterModule } from 'date-formatter';
+import { Test1Module } from 'wn-test-lib/dist/test1'
+import { DateFormatterModule } from 'wn-formatter/dist/date-formatter'
+// import { DateFormatterModule } from 'date-formatter';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { DateFormatterModule } from 'date-formatter';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    Test1Module,
     DateFormatterModule
   ],
   providers: [],
