@@ -1,0 +1,40 @@
+/* .table-data {
+  background-color: lightblue;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.table-row {
+  border: 5px solid red;
+  background-color: lightgreen;
+} */
+/* div {
+    color: blue
+} */
+.table-data {
+  border-radius: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid red; */
+}
+
+.table-data th,
+.table-data td {
+  padding: 10px;
+  border-bottom: 1px solid lightblue;
+}
+
+.table-data th {
+  background-color: lightskyblue;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table-data tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.table-data tr:hover {
+  background-color: transparent;
+}

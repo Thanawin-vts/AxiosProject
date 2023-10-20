@@ -1,16 +1,40 @@
-<h2>Date Now : {{ date }}</h2>
-<hr />
- Input Date Format : <input [(ngModel)]="format">
-<h3>Test Input : {{ format }}</h3>
-<p>Result : {{ date | dateformat : "TH" : format }}</p>
-<hr />
-<!--
-<h3>Date Format : dd-MM-yyyy</h3>
-<p>Result : {{ date | dateformat : "TH" : "dd-MM-yyyy" }}</p>
-<hr />
-<h3>Date Format : dd/MM/yyyy</h3>
-<p>Result : {{ date | dateformat : "TH" : "dd/MM/yyyy" }}</p>
-<hr />
-<h3>Date Format : Invalid Format</h3>
-<p>Result : {{ date | dateformat : "TH" : "dd-MM-yyyyy" }}</p>
-<hr /> -->
+
+<div style="margin: 20px;">
+  <h3>Date Formatter</h3>
+  <input type="text" [(ngModel)]="format">
+  <p>{{ date | dateformat : 'TH' : format == ''?'dd-MMM-yyyy': format }}</p>
+  <hr>
+  
+  <h3>Data Mapper</h3>
+  <input type="text" [(ngModel)]="code">
+  <p>{{ code }} - {{ code | datemapper : list1 : 'code' : 'name'}}</p>
+  <hr>
+  
+  <h3>Input Pattern</h3>
+  <div class="ms-3">
+      Number<input Number/>
+      Thai<input Thai/>
+      English<input English/>
+  </div>
+  <hr>
+  
+  <h3>Input Control</h3>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name" required />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" required />
+    </div>
+  </form>
+  <button (click)="clear()">clear</button>
+  <button (click)="enable()">enable</button>
+  <button (click)="disable()">disable</button>
+  <button (click)="reset()">reset</button>
+  
+  <div style="margin: 20px;">
+          <lib-wndashboard [data]="dashboradData"></lib-wndashboard>
+  </div>
+</div>
