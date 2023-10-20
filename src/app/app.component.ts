@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { DashboardDataModel } from 'wndashboard/lib/wndashboard.model';
 import { WninputcontrolService } from 'wninputcontrol';
+import { DashboardDataModel } from 'wndashboard';
 
 @Component({
   selector: 'app-root',
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  dashboradData: DashboardDataModel[] = [
+  dashboardData: DashboardDataModel[] = [
     {
       dataHeader: 'Casa Loan',
       totalCount: 100,
@@ -141,21 +141,17 @@ export class AppComponent implements OnInit {
 
   clear() {
     this.ws.clearValidatorControl(this.myForm, this.arrControl, ['name']);
-    console.log(this.myForm.controls);
   }
 
   enable() {
     this.ws.enableControl(this.myForm, this.arrControl, ['name']);
-    console.log(this.myForm.controls);
   }
 
   disable() {
     this.ws.disableControl(this.myForm, this.arrControl, ['name']);
-    console.log(this.myForm.controls);
   }
 
   reset() {
     this.ws.resetControl(this.myForm, this.arrControl, ['name', 'email']);
-    console.log(this.myForm.controls);
   }
 }

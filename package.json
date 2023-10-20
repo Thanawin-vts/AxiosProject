@@ -24,6 +24,7 @@
     "tslib": "^2.3.0",
     "wn-formatter": "^0.6.0",
     "wn-test-lib": "^0.0.3",
+    "wndashboard": "^0.0.2",
     "wndatamapper": "^0.0.2",
     "wninputcontrol": "^0.0.1",
     "wninputpattern": "^0.0.1",

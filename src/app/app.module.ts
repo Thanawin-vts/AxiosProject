@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DateFormatterModule } from 'wn-formatter/dist/date-formatter'
 import { WndatamapperModule } from 'wndatamapper';
 import { WninputpatternModule } from 'wninputpattern';
-import { DateFormatterModule } from 'wn-formatter/dist/date-formatter'
 import { WndashboardModule } from 'wndashboard';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
